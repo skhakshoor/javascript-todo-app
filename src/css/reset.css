@@ -1,0 +1,70 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* zero padding and margin */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+pre,
+dl,
+dd,
+ol,
+ul,
+figure,
+hr,
+fieldset,
+legend {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove trailing margins from nested lists */
+li > ol,
+li > ul {
+  margin-bottom: 0;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Reset Chrome and Firefox behaviour which sets a `min-width: min-content;` on fieldstes. */
+fieldset {
+  min-width: 0;
+  border: 0;
+}
+
+/* Global link styles */
+a {
+  text-decoration: none;
+  color: blue;
+  /* outline: 0; */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #cccccc;
+}
+
+p:empty {
+  display: none;
+}
